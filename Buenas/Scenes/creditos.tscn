@@ -1,7 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bj5vlic14cnbq"]
-
-[ext_resource type="PackedScene" uid="uid://dinxu3keehpxk" path="res://Scenes/instrucciones.tscn" id="1_lkha8"]
-
-[node name="Creditos" type="Node2D"]
-
-[node name="instrucciones" parent="." instance=ExtResource("1_lkha8")]
