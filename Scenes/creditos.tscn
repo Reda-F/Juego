@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://bj5vlic14cnbq"]
+
+[ext_resource type="Texture2D" uid="uid://bnj827bdv4dic" path="res://botones/Para el texto.png" id="1_jksek"]
+[ext_resource type="PackedScene" uid="uid://15er2jejxbtp" path="res://Scenes/instrucciones_para_cr.tscn" id="1_sdyxs"]
+
+[node name="Creditos" type="Node2D"]
+
+[node name="ParaElTexto" type="Sprite2D" parent="."]
+position = Vector2(538, 334)
+scale = Vector2(2.04, 1)
+texture = ExtResource("1_jksek")
+
+[node name="Button2" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+offset_left = 453.0
+offset_top = 316.0
+offset_right = 629.0
+offset_bottom = 347.0
+text = "Juego hecho por Reda"
+flat = true
+
+[node name="instrucciones" parent="." instance=ExtResource("1_sdyxs")]

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bito4histsnde"]
+
+[ext_resource type="PackedScene" uid="uid://15er2jejxbtp" path="res://Scenes/instrucciones_para_cr.tscn" id="1_f2ilw"]
+
+[node name="juego" type="Node2D"]
+
+[node name="instrucciones" parent="." instance=ExtResource("1_f2ilw")]

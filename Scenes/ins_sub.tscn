@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5mcuypnfmvks"]
+
+[ext_resource type="Texture2D" uid="uid://br111cgwfkhp8" path="res://Fondo/what-are-wasd-keys.jpg" id="1_jcetc"]
+
+[node name="Ins_sub" type="Node2D"]
+
+[node name="What-are-wasd-keys" type="Sprite2D" parent="."]
+position = Vector2(540, 360)
+texture = ExtResource("1_jcetc")
+
+[node name="Button" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+self_modulate = Color(0, 0, 0, 1)
+offset_left = 378.0
+offset_top = 207.0
+offset_right = 714.0
+offset_bottom = 238.0
+text = "Se usan las siguientes teclas para moverse"
+flat = true

@@ -1,0 +1,133 @@
+[gd_scene load_steps=8 format=3 uid="uid://c77khs64qwlu4"]
+
+[ext_resource type="Script" uid="uid://bod723toptf5u" path="res://Scripts/menu_principal.gd" id="1_u0ne7"]
+[ext_resource type="Texture2D" uid="uid://ck61vni6cko6f" path="res://botones/Botones.png" id="2_lb0yk"]
+[ext_resource type="Script" uid="uid://dkfv3qwx8w5hf" path="res://Scripts/script_fondo.gd" id="2_m8wvn"]
+[ext_resource type="Texture2D" uid="uid://d0wbfu052akfn" path="res://Fondo/Clouds/Clouds 2/1.png" id="3_lkh0e"]
+[ext_resource type="Texture2D" uid="uid://usgm5kd7wryt" path="res://Fondo/Clouds/Clouds 2/2.png" id="4_8xiu5"]
+[ext_resource type="Texture2D" uid="uid://b76b31ogewib6" path="res://Fondo/Clouds/Clouds 2/4.png" id="5_aasya"]
+[ext_resource type="Texture2D" uid="uid://bhi5cj0li6bhs" path="res://Fondo/Clouds/Clouds 2/3.png" id="6_ncjnv"]
+
+[node name="Menu_principal" type="Node2D"]
+script = ExtResource("1_u0ne7")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(15, 296)
+scale = Vector2(2.26, 1.92)
+texture = ExtResource("2_lb0yk")
+centered = false
+
+[node name="Créditos" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 29.0
+offset_top = 299.0
+offset_right = 92.0
+offset_bottom = 330.0
+grow_vertical = 2
+scale = Vector2(3, 3)
+text = "Credits"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(15, 158)
+scale = Vector2(3.29, 1.92)
+texture = ExtResource("2_lb0yk")
+centered = false
+
+[node name="Instrucciones" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 27.0
+offset_top = 160.0
+offset_right = 128.0
+offset_bottom = 191.0
+grow_vertical = 2
+scale = Vector2(3, 3)
+text = "Instructions
+"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(16, 10)
+scale = Vector2(1.25, 1.92)
+texture = ExtResource("2_lb0yk")
+centered = false
+
+[node name="Jugar" type="Button" parent="."]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 16.0
+offset_top = 10.0
+offset_right = 57.0
+offset_bottom = 41.0
+grow_vertical = 2
+scale = Vector2(3, 3)
+text = "Play
+"
+flat = true
+metadata/_edit_use_anchors_ = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+script = ExtResource("2_m8wvn")
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.3, 0.3)
+motion_mirroring = Vector2(1080, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+scale = Vector2(1.875, 2.222)
+texture = ExtResource("3_lkh0e")
+centered = false
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.55, 0.55)
+motion_mirroring = Vector2(1080, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2"]
+scale = Vector2(1.875, 2.222)
+texture = ExtResource("4_8xiu5")
+centered = false
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.77, 0.77)
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(0, 336.06)
+scale = Vector2(1, 1.185)
+texture = ExtResource("5_aasya")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4"]
+position = Vector2(576, 336.06)
+scale = Vector2(1, 1.185)
+texture = ExtResource("5_aasya")
+centered = false
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(0, 336.06)
+scale = Vector2(1, 1.185)
+texture = ExtResource("6_ncjnv")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3"]
+position = Vector2(576, 336.06)
+scale = Vector2(1, 1.185)
+texture = ExtResource("6_ncjnv")
+centered = false
+
+[connection signal="pressed" from="Créditos" to="." method="_on_créditos_pressed"]
+[connection signal="pressed" from="Instrucciones" to="." method="_on_instrucciones_pressed"]
+[connection signal="pressed" from="Jugar" to="." method="_on_button_pressed"]
