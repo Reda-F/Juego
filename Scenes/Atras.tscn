@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://7bjfac8ge5wl"]
+
+[node name="Button" type="Button"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 41.0
+scale = Vector2(2, 2)
+text = "Go back"
+flat = true

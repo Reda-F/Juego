@@ -1,12 +1,12 @@
 [gd_scene load_steps=9 format=3 uid="uid://dinxu3keehpxk"]
 
-[ext_resource type="Script" path="res://Scripts/instrucciones.gd" id="1_1eo1n"]
+[ext_resource type="Script" uid="uid://dkcha26kwqghy" path="res://Scripts/instrucciones.gd" id="1_1eo1n"]
 [ext_resource type="Texture2D" uid="uid://ck61vni6cko6f" path="res://botones/Botones.png" id="2_ecpo8"]
-[ext_resource type="Script" path="res://Scripts/script_fondo.gd" id="2_u3d4g"]
-[ext_resource type="Texture2D" uid="uid://d0wbfu052akfn" path="res://Fondo/Clouds/Clouds 2/1.png" id="3_e5cl5"]
-[ext_resource type="Texture2D" uid="uid://usgm5kd7wryt" path="res://Fondo/Clouds/Clouds 2/2.png" id="4_opcoi"]
-[ext_resource type="Texture2D" uid="uid://b76b31ogewib6" path="res://Fondo/Clouds/Clouds 2/4.png" id="5_jp2j8"]
-[ext_resource type="Texture2D" uid="uid://bhi5cj0li6bhs" path="res://Fondo/Clouds/Clouds 2/3.png" id="6_4rmj3"]
+[ext_resource type="Script" uid="uid://dkfv3qwx8w5hf" path="res://Scripts/script_fondo.gd" id="2_u3d4g"]
+[ext_resource type="Texture2D" path="res://Fondo/Clouds/Clouds 2/1.png" id="3_e5cl5"]
+[ext_resource type="Texture2D" path="res://Fondo/Clouds/Clouds 2/2.png" id="4_opcoi"]
+[ext_resource type="Texture2D" path="res://Fondo/Clouds/Clouds 2/4.png" id="5_jp2j8"]
+[ext_resource type="Texture2D" path="res://Fondo/Clouds/Clouds 2/3.png" id="6_4rmj3"]
 [ext_resource type="PackedScene" uid="uid://c5mcuypnfmvks" path="res://Scenes/ins_sub.tscn" id="8_e8337"]
 
 [node name="instrucciones" type="Node2D"]

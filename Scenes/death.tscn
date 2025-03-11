@@ -1,0 +1,42 @@
+[gd_scene load_steps=6 format=3 uid="uid://dfoqkvmha10ch"]
+
+[ext_resource type="Script" uid="uid://up6mhfpcsxk2" path="res://Scripts/death.gd" id="1_dkyka"]
+[ext_resource type="AudioStream" uid="uid://ceexu2hanff7l" path="res://Sounds/roblox-death-sound_1_DTdcw6q.mp3" id="1_rsl6c"]
+[ext_resource type="Texture2D" path="res://Fondo/empty-void-vs-goku-who-wins-v0-sup9z4iqsifd1.webp" id="2_u4dtd"]
+[ext_resource type="Texture2D" path="res://Fondo/Dark-Souls-You-Died.jpg" id="3_dkyka"]
+[ext_resource type="Texture2D" uid="uid://ck61vni6cko6f" path="res://botones/Botones.png" id="4_u4dtd"]
+
+[node name="Death" type="Node2D"]
+script = ExtResource("1_dkyka")
+
+[node name="Muerte" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("1_rsl6c")
+autoplay = true
+
+[node name="Empty-void-vs-goku-who-wins-v0-sup9z4Iqsifd1" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(547, 276)
+scale = Vector2(2, 2)
+texture = ExtResource("2_u4dtd")
+
+[node name="Dark-souls-you-died" type="Sprite2D" parent="."]
+position = Vector2(211, 617)
+scale = Vector2(0.458511, 0.4875)
+texture = ExtResource("3_dkyka")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(8, 4)
+scale = Vector2(1.46, 1.52)
+texture = ExtResource("4_u4dtd")
+centered = false
+
+[node name="Button" type="Button" parent="."]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 80.0
+offset_bottom = 41.0
+scale = Vector2(2, 2)
+text = "Go back"
+flat = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
